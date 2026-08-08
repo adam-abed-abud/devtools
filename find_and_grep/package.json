@@ -4,6 +4,22 @@
   "description": "A VS Code find and replace panel with an extra result-filter input.",
   "version": "0.0.1",
   "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adam-abed-abud/devtools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adam-abed-abud/devtools.git/issues"
+  },
+  "homepage": "https://github.com/adam-abed-abud/devtools/blob/main/find_and_grep/README.md",
+  "keywords": [
+    "find",
+    "grep",
+    "search",
+    "replace",
+    "filter"
+  ]  
   "engines": {
     "vscode": "^1.90.0"
   },
