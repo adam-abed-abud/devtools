@@ -1,0 +1,52 @@
+{
+  "name": "filtered-find-replace",
+  "displayName": "Filtered Find Replace",
+  "description": "A VS Code find and replace panel with an extra result-filter input.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:filteredFind.open",
+    "onCommand:filteredFind.quickSearch",
+    "onView:filteredFind.sidebar"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "filteredFind.open",
+        "title": "Filtered Find: Open"
+      },
+      {
+        "command": "filteredFind.quickSearch",
+        "title": "Filtered Find: Quick Search"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "filteredFind.quickSearch",
+        "key": "ctrl+alt+f",
+        "mac": "cmd+alt+f",
+        "when": "editorTextFocus || explorerViewletVisible"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "filteredFind.sidebar",
+          "name": "Filtered Search",
+          "type": "webview"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "node --check extension.js"
+  },
+  "devDependencies": {}
+}
