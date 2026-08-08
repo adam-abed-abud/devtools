@@ -18,12 +18,25 @@ Key features:
 - Replace only filtered matches.
 - Uses `ripgrep` when available, with a built-in JavaScript fallback.
 
+### Find and grep.nvim
+
+Path: [`find_and_grep_nvim/`](find_and_grep_nvim/)
+
+A Neovim plugin that searches with `rg`, applies a second filter to the result list, and sends the filtered matches to quickfix.
+
+Key features:
+
+- `:FindAndGrep` command.
+- Optional query argument, such as `:FindAndGrep TODO`.
+- Case-sensitive search command with `:FindAndGrepCase`.
+- Quickfix output for normal Neovim navigation.
+
 ## Repository Layout
 
 ```text
 .
-├── find_and_grep/     # VS Code extension
-├── README.md          # Repository overview
+├── find_and_grep/       # VS Code extension
+├── find_and_grep_nvim/  # Neovim plugin
+├── README.md            # Repository overview
 └── .gitignore
 ```
-
