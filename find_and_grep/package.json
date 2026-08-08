@@ -19,7 +19,7 @@
     "search",
     "replace",
     "filter"
-  ]  
+  ],
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -62,7 +62,9 @@
     }
   },
   "scripts": {
-    "lint": "node --check extension.js"
+    "lint": "node --check extension.js",
+    "package": "npx @vscode/vsce package",
+    "publish": "npx @vscode/vsce publish"
   },
   "devDependencies": {}
 }
