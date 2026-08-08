@@ -50,7 +50,7 @@ function openPanel(context) {
 
   panel = vscode.window.createWebviewPanel(
     "filteredFind",
-    "Filtered Find",
+    "Find and grep",
     vscode.ViewColumn.Beside,
     { enableScripts: true, retainContextWhenHidden: true }
   );
@@ -289,7 +289,7 @@ async function quickSearch() {
   }
 
   const pattern = await vscode.window.showInputBox({
-    title: "Filtered Find",
+    title: "Find and grep",
     prompt: "Find",
     ignoreFocusOut: true
   });
@@ -299,7 +299,7 @@ async function quickSearch() {
   }
 
   const filter = await vscode.window.showInputBox({
-    title: "Filtered Find",
+    title: "Find and grep",
     prompt: "Filter results",
     ignoreFocusOut: true
   });
@@ -332,7 +332,7 @@ async function quickSearch() {
       }
     ],
     {
-      title: "Filtered Find",
+      title: "Find and grep",
       placeHolder: "Filter matching options",
       ignoreFocusOut: true
     }
@@ -356,7 +356,7 @@ async function quickSearch() {
   await vscode.window.withProgress(
     {
       location: vscode.ProgressLocation.Notification,
-      title: "Filtered Find: searching",
+      title: "Find and grep: searching",
       cancellable: false
     },
     async () => {
@@ -391,7 +391,7 @@ async function quickSearch() {
       }))
     ],
     {
-      title: "Filtered Find Results",
+      title: "Find and grep Results",
       placeHolder: `${filtered.length} of ${lastResults.length} results (${lastSearchBackend})`,
       matchOnDescription: true,
       ignoreFocusOut: true
@@ -404,7 +404,7 @@ async function quickSearch() {
 
   if (picked.replace) {
     const replacement = await vscode.window.showInputBox({
-      title: "Filtered Find",
+      title: "Find and grep",
       prompt: "Replace filtered results with",
       ignoreFocusOut: true
     });
@@ -889,7 +889,7 @@ function getWebviewHtml(initialRoot) {
 <body>
   <main class="stack">
     <header class="toolbar">
-      <span>Filtered Search</span>
+      <span>Find and grep</span>
       <span id="backend"></span>
     </header>
     <section class="form">

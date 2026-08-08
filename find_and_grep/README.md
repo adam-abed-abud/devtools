@@ -1,4 +1,4 @@
-# Search Sieve
+# Find and grep
 
 A VS Code extension for workspace find and replace with an extra filter for narrowing the result list after the search runs.
 
@@ -15,10 +15,10 @@ A VS Code extension for workspace find and replace with an extra filter for narr
 
 1. Open this folder in VS Code.
 2. Press `F5` to launch an Extension Development Host.
-3. Open Explorer and use the `Filtered Search` view in the sidebar.
+3. Open Explorer and use the `Find and grep` view in the sidebar.
 4. If the window has no workspace folder, click `...` and choose the folder to search.
 
-You can also run `Filtered Find: Quick Search` from the command palette for the native fallback flow. It asks for the result filter and whether that filter should use match-case and/or whole-word matching.
+You can also run `Find and grep: Quick Search` from the command palette for the native fallback flow. It asks for the result filter and whether that filter should use match-case and/or whole-word matching.
 
 Default keybinding:
 
@@ -33,4 +33,4 @@ This is an early local extension scaffold. Before Marketplace publishing, add sc
 
 VS Code extensions cannot add a custom field directly to the built-in Search sidebar. This extension provides a separate panel backed by `ripgrep` when available and a built-in JavaScript search fallback otherwise.
 
-If VS Code fails to load webviews in the Extension Development Host, use `Filtered Find: Quick Search`. It uses native VS Code input boxes and quick picks, so it does not depend on the webview runtime.
+If VS Code fails to load webviews in the Extension Development Host, use `Find and grep: Quick Search`. It uses native VS Code input boxes and quick picks, so it does not depend on the webview runtime.

@@ -1,6 +1,6 @@
 {
-  "name": "filtered-find-replace",
-  "displayName": "Filtered Find Replace",
+  "name": "find-and-grep",
+  "displayName": "Find and grep",
   "description": "A VS Code find and replace panel with an extra result-filter input.",
   "version": "0.0.1",
   "publisher": "local",
@@ -20,11 +20,11 @@
     "commands": [
       {
         "command": "filteredFind.open",
-        "title": "Filtered Find: Open"
+        "title": "Find and grep: Open"
       },
       {
         "command": "filteredFind.quickSearch",
-        "title": "Filtered Find: Quick Search"
+        "title": "Find and grep: Quick Search"
       }
     ],
     "keybindings": [
@@ -39,7 +39,7 @@
       "explorer": [
         {
           "id": "filteredFind.sidebar",
-          "name": "Filtered Search",
+          "name": "Find and grep",
           "type": "webview"
         }
       ]
