@@ -2,7 +2,7 @@
   "name": "find-and-grep",
   "displayName": "Find and grep",
   "description": "A VS Code find and replace panel with an extra result-filter input.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "local",
   "license": "MIT",
   "repository": {
